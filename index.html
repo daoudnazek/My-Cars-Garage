@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Garage</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Garagi</h1>
+    </header>
+    <main>
+        <div id="container">
+            <div id="form">
+                <form>
+                    <fieldset>
+                        <label for="carModel"> Car Model</label><br>
+                        <input type="text" id="carModel"><br>
+                        <label for="carModelYear">Model Year</label><br>
+                        <input type="number" id="carModelYear"><br>
+                        <label for="manufactrers">Manufacturers</label><br>
+                        <select name="manufactrers" id="manufactrers">
+                            <option value="Germany">Germany</option>
+                            <option value="Korea">Korea</option>
+                            <option value="Japan">Japan</option>
+                            <option value="France">France</option>
+                            <option value="Usa">Usa</option>
+                        </select><br>
+                        <input id="submit" type="submit">
+                    </fieldset>
+                </form>
+            </div>
+            <div id="table"></div>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
