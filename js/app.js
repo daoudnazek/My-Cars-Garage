@@ -35,20 +35,38 @@ function handleClick(event){
 function newCar (){
     var carModel = document.getElementById('carModel').value;
     var carModelYear = document.getElementById('carModelYear').value;
-    var manufacturer = document.getElementById('manufacturers').value;
+    var manufacturer = document.getElementById('manufacturers');
+    var manuValue = manufacturer.options.value;
     var newCar = new Cars (carModel,carModelYear,manufacturer);
+    
 } 
 
 function storeToLocalStorage(){
     localStorage.setItem('Cars',JSON.stringify(carsItems));
 }
 
-function createTable(){
-    var cars = JSON.parse(localStorage.getItem('Cars'));
-
+function createTableHHeader(){
+    
     var parentElement = document.getElementById('table');
     var table = document.createElement('table');
-    var tr = document.createElement('tr')
-    tr.textContent = cars[i].carModel;
+    var tr1 = document.createElement('tr')
+    tr1.textContent = 'Car Model';
+    table.appendChild(tr);
+    var tr2 = document.createElement('tr')
+    tr2.textContent = 'Model Year';
+    table.appendChild(tr2);
+    var tr3 = document.createElement('tr')
+    tr3.textContent = 'Price';
+    table.appendChild(tr3);
+    var tr4 = document.createElement('tr')
+    tr4.textContent = 'Manufacturer';
+    table.appendChild(tr4);
 }
+createTableHHeader();
 
+function createTable(){
+    var cars = JSON.parse(localStorage.getItem('Cars'));
+    for (i=0; i<carsItems.length, i++){
+        
+    }
+}
